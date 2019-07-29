@@ -1,0 +1,109 @@
+/*
+ * Practice : Negative Margins
+ * Version: 1
+ * By: xxx
+ */
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+
+/* styling all the containers*/
+
+.nm-example>hr {
+    border-top: 2px solid #D24F2E;
+    width: 100%;
+    margin: 0;
+}
+
+.nm-example {
+    background-color: #e6e6e6;
+    padding: 15px;
+    margin: 15px;
+}
+
+
+/* first item of the exercise  */
+
+.nm-content {
+    width: 100%;
+    margin-right: -200px;
+}
+
+.nm-content p {
+    margin-right: 200px;
+    padding-right: 30px;
+}
+
+.nm-side {
+    margin-left: 87%;
+    margin-top: -99px;
+    width: 200px;
+}
+
+.nm-side-border {
+    border-left: 1px solid #b7b7b7;
+    padding-bottom: 4px;
+}
+
+
+/* second item of the exercise */
+
+.nm-top {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.nm-top li {
+    line-height: 1.6em;
+    text-align: justify;
+}
+
+.nm-top-hr {
+    border-bottom: 1px solid #b7b7b7;
+    width: 17%;
+    margin-left: 12px;
+    padding: 0%;
+}
+
+.col2 {
+    margin-left: 100px;
+}
+
+.col3 {
+    margin-left: 200px;
+}
+
+.top {
+    margin-top: -66px;
+}
+
+
+/*  last item of the exercise */
+
+.nm-footer-wrap {
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+.top-foot {
+    margin-top: -25px;
+}
+
+.nm-site-footer {
+    height: 50px;
+}
+
+.nm-footer-list {
+    list-style: none;
+    padding: 10px;
+    margin: 150x;
+    background-color: #D24F2E;
+}
+
+.nm-footer-list li {
+    color: white;
+}
