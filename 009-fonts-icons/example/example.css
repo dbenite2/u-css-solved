@@ -1,4 +1,8 @@
-/* Practice: Fonts and icons */
+/*
+ * Practice : Fonts, Icons and Sizes
+ * Version: 1
+ * By: David Benitez
+ */
 
 @font-face {
     font-family: 'raleway-bold';
@@ -23,10 +27,6 @@
     font-weight: 100;
     font-style: normal;
 }
-
-
-/*  GENERAL STYLES	
-   ============================= */
 
 html,
 body {
@@ -202,10 +202,6 @@ p::first-letter {
     text-align: right;
     width: 100%;
 }
-
-
-/*  MOBILE STYLES 	
-   ============================= */
 
 @media (max-width: 640px) {
     body {
