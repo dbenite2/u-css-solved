@@ -142,6 +142,16 @@
      height: 40px;
      margin-left: 5px;
  }
+ /*practice solution*/
+ 
+ .as-top-list button:first-child {
+     background-color: #000;
+ }
+ 
+ .as-top-list button:first-child i {
+     color: #fff;
+ }
+ /*----*/
  
  .as-cards {
      display: flex;
@@ -151,6 +161,10 @@
  
  .as-card {
      position: relative;
+ }
+ 
+ .as-card:hover {
+     opacity: 0.5;
  }
  
  .as-card-img {
@@ -169,12 +183,14 @@
      -webkit-transition: all 0.3s;
      transition: all 0.3s;
  }
+ /* practice solution */
  
  .as-card-img img:hover {
      cursor: pointer;
      opacity: 0.5;
      transform: scale(1.1, 1.1)
  }
+ /*----*/
  
  .as-onsale {
      background-color: #fbc2d4;
