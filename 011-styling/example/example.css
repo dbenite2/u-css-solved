@@ -1,0 +1,71 @@
+/*
+ * Practice : Styling Buttons, links and lists
+ * Version: 1
+ * By: David Benitez
+ */
+
+html,
+body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    position: fixed;
+    background-image: url(../resources/background.jpg);
+    z-index: -1;
+}
+
+input,
+textarea {
+    display: inline-block;
+    background-color: #F0EFF1;
+}
+
+.page-wrap {
+    text-align: center;
+}
+
+.page-wrap>div {
+    height: 30%;
+}
+
+.page-wrap h1 {
+    text-transform: uppercase;
+    color: white;
+}
+
+.style-form {
+    display: flex;
+    flex-flow: row;
+    text-align: center;
+    width: 100%;
+    height: 40%;
+    background-color: white;
+}
+
+.style-form p {
+    color: #F0EFF1;
+}
+
+footer {
+    display: flex;
+    height: 30%;
+    background: #F5C5D7;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    border-bottom: 1px solid white
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
