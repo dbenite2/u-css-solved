@@ -1,4 +1,8 @@
-/* Practice: Fonts and icons */
+/*
+ * Practice : Fonts, Icons and Sizes
+ * Version: 1
+ * By: David Benitez
+ */
 
 @font-face {
     font-family: 'raleway-bold';
@@ -24,10 +28,6 @@
     font-style: normal;
 }
 
-
-/*  GENERAL STYLES	
-   ============================= */
-
 html,
 body {
     background: linear-gradient(to right, #DAEAE1 70%, #595E5B 30%);
@@ -52,16 +52,13 @@ p::first-letter {
     line-height: 2.5;
 }
 
-.trash {
-    color: black;
-}
-
 .container {
     position: relative;
 }
 
 .transparent-color {
     background-color: #76C4D1;
+    opacity: 0.7;
     box-sizing: border-box;
     margin: 5%;
     padding: 5% 0;
@@ -202,10 +199,6 @@ p::first-letter {
     text-align: right;
     width: 100%;
 }
-
-
-/*  MOBILE STYLES 	
-   ============================= */
 
 @media (max-width: 640px) {
     body {
