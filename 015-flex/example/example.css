@@ -18,51 +18,251 @@ a {
     color: #B6B6B6;
 }
 
+h1,
+p,
+ul {
+    color: white;
+    width: 100%;
+    margin: 0;
+}
+
+h1,
+p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.page-content {
+    padding: 0;
+}
+
 .header {
     background-image: url(../resources/images/image.jpg);
     background-size: cover;
-    background-position: center center;
     width: 100%;
     height: 216px;
-    margin-bottom: -76px;
-    position: relative;
+    position: absolute;
     z-index: -1;
 }
 
-.container {
+
+/* mobile-first method */
+
+.container,
+.foot-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-    padding: 10px;
+}
+
+#contain {
+    margin: 0 auto;
+    padding: 120px 10px;
+    width: 325px;
     z-index: 1;
 }
 
 .card {
+    position: relative;
     display: flex;
     flex-direction: column;
-    width: 25%;
-    margin: 1.4%;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 15%;
     border: 1px solid #8A8889;
 }
 
+.card div:first-child {
+    overflow: hidden;
+}
+
 .card img {
-    border-bottom: 1px solid #8A8889;
+    position: relative;
     width: 100%;
+    max-width: 100%;
+    transition: all 0.3s;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.card:hover img {
+    transform: scale(1.1, 1.1);
 }
 
 .content {
+    position: relative;
     display: flex;
     flex-direction: column;
+    padding-top: 10px;
     width: 100%;
     /* border: 1px solid #8A8889; */
 }
 
 .content div:first-child {
-    width: 90%;
+    width: 94.9%;
+    padding-left: 3%;
 }
 
 .footer {
+    position: relative;
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    padding: 3%;
     border-top: 1px solid #8A8889;
+}
+
+.footer div:first-child a:hover {
+    color: #d9d9d9;
+}
+
+.shd-box {
+    width: 20%;
+    padding: 5px 5px 0 5px;
+    text-align: center;
+}
+
+.shd-box a {
+    color: rgb(255, 64, 129);
+}
+
+.shd-box:hover {
+    background-color: #F1F0F0;
+}
+
+#foot-cont {
+    padding: 50px;
+    background-color: #886BCE;
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.dropdown-foot {
+    display: block;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.dropdown-foot .heading {
+    box-sizing: border-box;
+    font-size: 1em;
+    height: 65px;
+    line-height: 65px;
+    overflow: hidden;
+    position: relative;
+    text-overflow: ellipsis;
+    text-transform: capitalize;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.dropdown-foot .heading::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.dropdown-foot input {
+    height: 65px;
+    margin: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.dropdown-foot input:checked+.drop-content {
+    display: block;
+}
+
+.drop-content {
+    display: none;
+    padding-right: 30px;
+}
+
+.drop-content ul {
+    padding: 0px;
+}
+
+.drop-content ul li {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    text-align: left;
+    border-bottom: 0.7px solid #B6B6B6;
+}
+
+.small-sc img {
+    margin: 2px 0px;
+}
+
+@media (min-width: 768px) {
+    .container,
+    #contain {
+        width: 768px;
+        flex-flow: wrap row;
+    }
+    .card {
+        width: 40%;
+        margin: 1%;
+    }
+}
+
+@media (min-width: 1024px) {
+    #contain,
+    .container {
+        margin: 0;
+        justify-content: space-around;
+        width: 1024px;
+    }
+    .card {
+        margin: 3%;
+        width: 43%;
+    }
+    .dropdown {
+        width: 1024px;
+        flex-flow: wrap row;
+        justify-content: flex-start;
+        align-content: space-between;
+    }
+    .dropdown-foot {
+        width: 42%;
+        text-align: left;
+    }
+    .dropdown-foot input:enabled+.drop-content {
+        display: block;
+    }
+    .dropdown-foot .header:after {
+        display: none;
+    }
+    .dropdown-foot div {
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container,
+    #contain {
+        width: 1200px;
+        margin: 0 auto;
+    }
+    .card {
+        width: 25%;
+    }
+    .dropdown {
+        width: 1200px;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
 }
