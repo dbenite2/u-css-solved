@@ -1,0 +1,143 @@
+/* Selection */
+
+::-moz-selection {
+    background: darkblue;
+    color: white;
+}
+
+::selection {
+    background: darkblue;
+    color: white;
+}
+
+
+/* h1 selectors */
+
+h1 {
+    text-transform: uppercase;
+}
+
+h1::before {
+    content: "Lesson 4: ";
+    color: lightblue;
+}
+
+
+/* a selectors */
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+
+/* List selectors */
+
+ul {
+    list-style: none;
+    color: darkgray;
+}
+
+ul li:first-child {
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 5%;
+    padding: 5% 0;
+    border-bottom: 1px solid blue;
+}
+
+ul li:first-child a {
+    color: lightblue;
+}
+
+ul li:first-child a:after {
+    content: ":";
+    color: darkblue;
+    font-weight: 900px;
+}
+
+ul+li:after {
+    content: ":"
+}
+
+li::first-letter {
+    text-transform: uppercase;
+}
+
+li:nth-child(2n+3) {
+    padding: 5%;
+    font-weight: 900;
+}
+
+
+/* Paragraph selectors */
+
+p::first-letter {
+    text-transform: uppercase;
+}
+
+p::first-line {
+    background: lightgray;
+}
+
+p:last-child {
+    margin-bottom: 5%;
+    padding-bottom: 5%;
+    border-bottom: 1px solid black;
+}
+
+p+p::first-letter {
+    font-size: 20px;
+    color: lightblue;
+    font-weight: 900;
+    letter-spacing: 3px;
+}
+
+p~p {
+    color: darkblue;
+}
+
+
+/* Table selectors */
+
+table {
+    border-spacing: 0;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+thead {
+    font-size: 20px;
+}
+
+th {
+    border-bottom: 1px solid blue;
+    color: lightblue;
+    font-weight: 100;
+}
+
+th::first-letter {
+    text-transform: uppercase;
+}
+
+thead th:nth-child(even) {
+    font-weight: 900;
+}
+
+td::first-letter {
+    text-transform: uppercase;
+}
+
+tr td:nth-child(odd) {
+    text-align: center;
+    background: lightgray;
+}
+
+tr td:nth-child(even) {
+    text-align: right;
+}
+
+tbody tr:nth-child(3) td:nth-child(2) {
+    background: darkblue;
+    color: white;
+}

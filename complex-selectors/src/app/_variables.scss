@@ -1,0 +1,25 @@
+// fonts
+$font-stack:    Helvetica, sans-serif;
+
+//Sizes
+$height-full:   100%;
+$width-full:    100%;
+$height-footer: 50px;
+
+//colors
+$white:         #fff;
+$black:         #000;
+
+$grey:          #c2c2c2;
+$light-grey:    #eee;
+$dark-grey:     #a9a9a9;
+
+$blue:          #0000FF;
+$light-blue:    #b2b2ff;
+$dark-blue:     #00007f;
+
+//mixin
+@mixin font-size ($sizeValue: 1.4) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
