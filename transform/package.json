@@ -1,8 +1,8 @@
 {
-  "name": "complex-selectors",
+  "name": "transform",
   "version": "1.0.0",
-  "description": "",
-  "author": "Zuly Alcaraz",
+  "description": "Cool ways of using transform property",
+  "author": "Alejandro Granada",
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.10.1",
