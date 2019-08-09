@@ -1,0 +1,50 @@
+/* Colors */
+$black: #000000;
+$medium-black: rgba(0, 0, 0, 0.4);
+$dark-gray: #333333;
+$dark-gray-v1: #444444;
+$dark-gray-v2: #666666;
+$dark-gray-v3: #888888;
+$gray: #808080;
+$light-gray: #aaaaaa;
+$brown: #784212;
+$dark-brown: #816f47;
+$medium-brown: #beae8c;
+$light-brown: #cdbe9f;
+$dark-green: #12806a;
+$light-green: #16a085;
+$dark-purple: #8E44AD;
+$light-purple : #BB8FCE;
+$white: #F1EDDC;
+
+/* Rainbow Colors */
+$blue:   rgba(0, 133, 255, .53);
+$green:  rgba(22, 243, 3, .55);
+$orange: rgba(253, 127, 11, .54);
+$purple: rgba(190, 11, 224, .55);
+$red:    rgba(255, 0, 0, .45);
+$yellow: rgba(235, 255, 0, .54);
+
+/* Rainbow Variables */
+$shadow-blur: 0;
+$shadow-depth: 18px;
+$shadow-spread: 0;
+
+$x-offset: 15px;
+$y-offset: 9px;
+
+/* Variables */
+$height-full:   100%;
+$width-full:    100%;
+
+/* Shadows */
+$shadow:  
+	0 0 65px $light-brown inset, 
+	0 0 20px $medium-brown inset;
+$brown-shadow: 
+	0 0 0 $white inset, 
+	0 0 20px $medium-brown inset, 
+	0 0 5px $dark-brown;
+
+
+
