@@ -107,4 +107,15 @@
 
 /* Add Responsive 1200px */
 
-@media (min-width:1200px) {}
+@media (min-width:1200px) {
+    .section-b ul {
+        display: flex;
+    }
+    .section-b li {
+        margin: 0;
+        width: 33.3%;
+    }
+    .card-content {
+        font-family: 'permanent';
+    }
+}
