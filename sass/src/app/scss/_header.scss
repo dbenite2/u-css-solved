@@ -1,0 +1,46 @@
+@import 'commons';
+.header {
+    height: $Full-Height;
+    a {
+        padding: 0 10px;
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+    img {
+        width: 250px;
+    }
+}
+
+.bg-1::before {
+    @extend %general-gradient;
+}
+
+.bg-1 {
+    @extend %general-header;
+    background: url($First-Background) no-repeat center center;
+    background-size: cover;
+    @include delay(10s);
+}
+
+.bg-2::before {
+    @extend %general-gradient;
+}
+
+.bg-2 {
+    @extend %general-header;
+    background: url($Second-Background) no-repeat center center;
+    background-size: cover;
+    @include delay(5s);
+}
+
+.bg-3:before {
+    @extend %general-gradient;
+}
+
+.bg-3 {
+    @extend %general-header;
+    background: url($Third-Background) no-repeat center center;
+    background-size: cover;
+    @include delay(0s);
+}
