@@ -1,0 +1,49 @@
+// commons
+html {
+  font-family: $font-stack;
+  font-size: $font-size-base;
+  height: $height-full;
+}
+
+body {
+  @include font-size(1.6);
+  background-color: $light;
+  color: $dark;
+  font-weight: 100;
+  height: $height-full;
+  line-height: 1.5;
+}
+
+footer {
+  background-color: $light-grey;
+  color: $dark-grey;
+  height: $height-footer;
+  line-height: $height-footer;
+  text-align: right;
+  padding: 0 20px;
+}
+
+input {
+  background-color: $light-grey;
+  border: 1px solid $dark-grey;
+  border-radius: 2px;
+  color: $dark-grey;
+  height: 50px;
+  margin: 0;
+  padding: 0 10px;
+  width: 50%;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.content {
+  align-items: center;
+  display: flex;
+  height: $height-full;
+  justify-content: center;
+  margin-bottom: -50px;
+  width: $width-full;
+}
+
