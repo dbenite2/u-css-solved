@@ -9,6 +9,14 @@
 @import 'scss/variables';
 @import 'scss/mixins';
 
+.content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: $height-full;
+  margin-bottom: -50px;
+}
+
 /**
  *  Do not remove the comment below. It's the markers used by gulp-inject to inject
  *  all your sass files automatically
