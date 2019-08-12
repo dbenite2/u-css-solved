@@ -1,8 +1,14 @@
 input {
-   /* Chrome/Opera/Safari */
-
-  /* Firefox 19+ */
-
-  /* IE 10+ */
+    /* Chrome/Opera/Safari */
+    &::-webkit-input-placeholder {
+        color: pink;
+    }
+    /* Firefox 19+ */
+    &::-moz-placeholder {
+        color: blue;
+    }
+    /* IE 10+ */
+    &::-ms-input-placeholder {
+        color: green;
+    }
 }
-
