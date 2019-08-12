@@ -1,0 +1,35 @@
+// commons
+html {
+  font-family: $font-stack;
+  font-size: $font-size-base;
+  height: $height-full;
+}
+
+body {
+  @include font-size(1.6);
+  background-color: $light;
+  color: $light;
+  font-weight: 100;
+  height: $height-full;
+  line-height: 1.5;
+}
+
+footer {
+  background-color: $light-grey;
+  color: $dark-grey;
+  height: $height-footer;
+  line-height: $height-footer;
+  text-align: right;
+  padding: 0 20px;
+}
+
+
+.content {
+  align-items: center;
+  display: flex;
+  height: $height-full;
+  justify-content: center;
+  margin-bottom: -50px;
+  width: $width-full;
+}
+
