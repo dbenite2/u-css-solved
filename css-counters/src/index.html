@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>CSS Counters</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+  <!-- build:css({.tmp/serve,src}) styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- run `gulp inject` to automatically populate bower styles dependencies -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css({.tmp/serve,src}) styles/app.css -->
+  <!-- inject:css -->
+  <!-- css files will be automatically insert here -->
+  <!-- endinject -->
+  <!-- endbuild -->
+</head>
+<body>
+<!--[if lt IE 10]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+  your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<main class="content">
+  <h1>CSS Counters</h1>
+
+  <div class="box-wrap flex-wrap">
+
+    <section class="box flex-item">
+      <h2>Basic Counter</h2>
+      <a href="#" class="page"></a>
+      <a href="#" class="page"></a>
+      <a href="#" class="page"></a>
+      <a href="#" class="page"></a>
+      <a href="#" class="page"></a>
+      <a href="#" class="page"></a>
+      <a href="#" class="page"></a>
+      <a href="#" class="page"></a>
+    </section>
+
+    <section class="box flex-item">
+      <h2>Multiple Counters</h2>
+      <section class="section">
+        <div class="subsection"></div>
+        <div class="subsection"></div>
+        <div class="subsection"></div>
+      </section>
+      <section class="section">
+        <div class="subsection"></div>
+        <div class="subsection"></div>
+        <div class="subsection"></div>
+      </section>
+      <section class="section">
+        <div class="subsection"></div>
+        <div class="subsection"></div>
+        <div class="subsection"></div>
+      </section>
+      <section class="section">
+        <div class="subsection"></div>
+        <div class="subsection"></div>
+        <div class="subsection"></div>
+      </section>
+    </section>
+
+    <section class="box flex-item">
+      <h2>Counting User Selections</h2>
+
+      <label class="label-choose"><input type="checkbox" class="choose"> One</label>
+      <label class="label-choose"><input type="checkbox" class="choose"> Two</label>
+      <label class="label-choose"><input type="checkbox" class="choose"> Three</label>
+      <label class="label-choose"><input type="checkbox" class="choose"> Four</label>
+      <label class="label-choose"><input type="checkbox" class="choose"> Five</label>
+      <label class="label-choose"><input type="checkbox" class="choose"> Six</label>
+      <label class="label-choose"><input type="checkbox" class="choose"> Seven</label>
+      <label class="label-choose"><input type="checkbox" class="choose"> Eight</label>
+
+      <div class="total">Total Selected:</div>
+    </section>
+
+    <section class="box flex-item">
+      <h2>Controlling Increment</h2>
+
+      <label class="label-sum"><input type="checkbox" id="a" class="sum"> 12</label>
+      <label class="label-sum"><input type="checkbox" id="b" class="sum"> -67</label>
+      <label class="label-sum"><input type="checkbox" id="c" class="sum"> 9</label>
+      <label class="label-sum"><input type="checkbox" id="d" class="sum"> 100</label>
+      <label class="label-sum"><input type="checkbox" id="e" class="sum"> 8</label>
+      <label class="label-sum"><input type="checkbox" id="f" class="sum"> 11</label>
+      <label class="label-sum"><input type="checkbox" id="g" class="sum"> -1</label>
+      <label class="label-sum"><input type="checkbox" id="h" class="sum"> 90</label>
+
+      <div class="total-sum">Total Sum </div>
+    </section>
+  </div>
+
+
+</main>
+
+<footer>&copy; By: Zuly Alcaraz</footer>
+
+
+<!-- build:js(src) scripts/vendor.js -->
+<!-- bower:js -->
+<!-- run `gulp inject` to automatically populate bower script dependencies -->
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js({.tmp/serve,.tmp/partials,src}) scripts/app.js -->
+<!-- inject:js -->
+<!-- js files will be automatically insert here -->
+<!-- endinject -->
+
+<!-- inject:partials -->
+<!-- angular templates will be automatically converted in js and inserted here -->
+<!-- endinject -->
+<!-- endbuild -->
+
+</body>
+</html>
