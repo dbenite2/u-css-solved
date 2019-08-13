@@ -1,0 +1,145 @@
+/* navbar */
+.navbar {
+  background: $dark-gray;
+  display: block;
+  margin-top: 0;
+  text-align: right;
+  li {
+    display: inline-block;
+  }
+  a {
+    color: $white;
+    cursor: pointer;
+    display: block;
+    font-size: 1.5em;
+    line-height: 20px;
+    padding: 15px 10px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .07s linear;
+    &:hover .box,
+    &:focus .box {
+
+      /* Add the rotation*/
+
+    }
+  }
+
+  .box, .front, .back {
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .box {
+
+    /* Add transform style */
+
+    transition: all .3s ease-out;
+  }
+  .front, .back {
+    background: $dark-gray;
+    color: $white;
+    padding: 15px 10px;
+  }
+
+  /* Add rotation and transformation logic for each size */
+
+  .front {
+    
+  }
+  .back {
+   
+  }
+}
+
+/* Header */
+.header{
+  height: 200px;
+  text-align: center;
+  width: 100%;
+  h1{
+    font-size: 4em;
+    text-shadow: 6px 4px 2px $light-gray;
+
+    /* Add the rotate logic to the title */
+
+  }
+}
+
+/* Cube */
+.cube-section{
+  cursor: pointer;
+  height: 300px;
+  perspective: 1000px;
+  position: relative;
+  width: 100%;
+  .cube{
+    animation: spinCube 10s infinite ease-in-out;
+    height: 60px;
+    left: 50%;
+    position: absolute;
+    top: 30%;
+
+    /* Add transform style */
+
+    transform-origin: 60px 60px 0;
+    width: 60px;
+    img{
+      height: 120px;
+      position: absolute;
+      width: 120px;
+    }
+  }
+  .face1, .face2, .face3, .face4, .face5, .face6{
+    transition: transform 3s;
+  }
+
+  /* Add rotation and transform logic for each face */
+
+  .face1 {
+    
+  }
+  .face2 {
+    
+  }
+  .face3 {
+    
+  }
+  .face4 {
+    
+  }
+  .face5 {
+    
+  }
+  .face6 {
+    
+  }
+
+  &:hover{
+
+    /* Add rotation and transform logic for each face when hover */
+
+    .face1 {
+  
+    }
+    .face2 {
+      
+    }
+    .face3 {
+      
+    }
+    .face4 {
+     
+    }
+    .face5 {
+      
+    }
+    .face6 {
+      
+    }
+  }
+}
