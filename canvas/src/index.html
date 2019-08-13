@@ -26,31 +26,18 @@
   your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<ul class="wrapper">
-  <div class="sun">
-    <div class="star"></div>
+<section class="container">
+  <div class="control">
+    <input id='animateButton' type='button' value='Animate'/>
   </div>
-  <div class="mercury">
-    <div class="planet">
-      <div class="shadow"></div>
-    </div>
-  </div>
-  <div class="venus">
-    <div class="planet">
-      <div class="shadow"></div>
-    </div>
-  </div>
-  <div class="earth">
-    <div class="planet"><div class="shadow"></div></div>
-  </div>
-  <div class="mars">
-    <div class="planet"><div class="shadow"></div></div>
-  </div>
-  <div class="jupiter">
-    <div class="planet"><div class="shadow"></div></div>
-  </div>
-</ul>
 
+  <canvas id='canvas' class="canvas" width='750' height='500'>
+    Canvas not supported
+  </canvas>
+</section>
+
+
+<footer>&copy; By: Caro Penagos</footer>
 
 
 <!-- build:js(src) scripts/vendor.js -->
@@ -69,5 +56,7 @@
 <!-- endinject -->
 <!-- endbuild -->
 
+<script src='./app/scripts/refresh-window.js'></script>
+<script src='./app/scripts/animation.js'></script>
 </body>
 </html>
