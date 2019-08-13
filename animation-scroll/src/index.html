@@ -1,112 +1,115 @@
 <!doctype html>
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <title>Animation on Scroll Position</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+    <title>Animation on Scroll Position</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
 
-  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 
-  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-  <!-- build:css({.tmp/serve,src}) styles/vendor.css -->
-  <!-- bower:css -->
-  <!-- run `gulp inject` to automatically populate bower styles dependencies -->
-  <!-- endbower -->
-  <!-- endbuild -->
+    <!-- build:css({.tmp/serve,src}) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- run `gulp inject` to automatically populate bower styles dependencies -->
+    <!-- endbower -->
+    <!-- endbuild -->
 
-  <!-- build:css({.tmp/serve,src}) styles/app.css -->
-  <!-- inject:css -->
-  <!-- css files will be automatically insert here -->
-  <!-- endinject -->
-  <!-- endbuild -->
+    <!-- build:css({.tmp/serve,src}) styles/app.css -->
+    <!-- inject:css -->
+    <!-- css files will be automatically insert here -->
+    <!-- endinject -->
+    <!-- endbuild -->
 </head>
+
 <body>
 
-<!--[if lt IE 10]>
+    <!--[if lt IE 10]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<main>
+    <main>
 
-  <section class="bg1 parallax"></section>
+        <section class="bg1 parallax"></section>
 
-  <section class="content flex-content column-direction">
-    <h1 class="title">Animations on Scroll Position</h1>
-    <h2 class="subtitle">(Using AOS Library)</h2>
-  </section>
+        <section class="content flex-content column-direction">
+            <h1 class="title">Animations on Scroll Position</h1>
+            <h2 class="subtitle">(Using AOS Library)</h2>
+        </section>
 
-  <section class="content flex-content column-direction">
-    <article class="item start-align">
-      <h2>Fade Up</h2>
-    </article>
+        <section class="content flex-content column-direction">
+            <article class="item start-align" data-aos="fade-up">
+                <h2>Fade Up</h2>
+            </article>
 
-    <article class="item end-align">
-      <h2>Fade Down</h2>
-    </article>
-  </section>
+            <article class="item end-align" data-aos="fade-down">
+                <h2>Fade Down</h2>
+            </article>
+        </section>
 
-  <section class="content flex-content column-direction">
-    <article class="item start-align">
-      <h2>Fade Left</h2>
-    </article>
+        <section class="content flex-content column-direction">
+            <article class="item start-align" data-aos="fade-left">
+                <h2>Fade Left</h2>
+            </article>
 
-    <article class="item end-align">
-      <h2>Fade Right</h2>
-    </article>
-  </section>
+            <article class="item end-align" data-aos="fade-right">
+                <h2>Fade Right</h2>
+            </article>
+        </section>
 
-  <section class="content flex-content column-direction">
-    <article class="item start-align">
-      <h2>Fade Down Left</h2>
-    </article>
+        <section class="content flex-content column-direction">
+            <article class="item start-align" data-aos="fade-down-left">
+                <h2>Fade Down Left</h2>
+            </article>
 
-    <article class="item end-align">
-      <h2>Fade Down Right</h2>
-    </article>
-  </section>
+            <article class="item end-align" data-aos="fade-down-right">
+                <h2>Fade Down Right</h2>
+            </article>
+        </section>
 
 
-  <section class="content flex-content column-direction">
-    <article class="item grey start-align">
-      <h2>Flip Up</h2>
-    </article>
+        <section class="content flex-content column-direction">
+            <article class="item grey start-align" data-aos="flip-up">
+                <h2>Flip Up</h2>
+            </article>
 
-    <article class="item end-align">
-      <h2>Flip Right</h2>
-    </article>
-  </section>
+            <article class="item end-align" data-aos="flip-right">
+                <h2>Flip Right</h2>
+            </article>
+        </section>
 
-  <section class="content flex-content column-direction">
-    <article class="item grey start-align">
-      <h2>Zoom In</h2>
-    </article>
+        <section class="content flex-content column-direction">
+            <article class="item grey start-align" data-aos="zoom-in">
+                <h2>Zoom In</h2>
+            </article>
 
-    <article class="item end-align">
-      <h2>Zoom Out Down</h2>
-    </article>
-  </section>
-</main>
+            <article class="item end-align" data-aos="zoom-out-down">
+                <h2>Zoom Out Down</h2>
+            </article>
+        </section>
+    </main>
 
-<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-<script src="app.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="app.js"></script>
 
-<!-- build:js(src) scripts/vendor.js -->
-<!-- bower:js -->
-<!-- run `gulp inject` to automatically populate bower script dependencies -->
-<!-- endbower -->
-<!-- endbuild -->
+    <!-- build:js(src) scripts/vendor.js -->
+    <!-- bower:js -->
+    <!-- run `gulp inject` to automatically populate bower script dependencies -->
+    <!-- endbower -->
+    <!-- endbuild -->
 
-<!-- build:js({.tmp/serve,.tmp/partials,src}) scripts/app.js -->
-<!-- inject:js -->
-<!-- js files will be automatically insert here -->
-<!-- endinject -->
+    <!-- build:js({.tmp/serve,.tmp/partials,src}) scripts/app.js -->
+    <!-- inject:js -->
+    <!-- js files will be automatically insert here -->
+    <!-- endinject -->
 
-<!-- inject:partials -->
-<!-- angular templates will be automatically converted in js and inserted here -->
-<!-- endinject -->
-<!-- endbuild -->
+    <!-- inject:partials -->
+    <!-- angular templates will be automatically converted in js and inserted here -->
+    <!-- endinject -->
+    <!-- endbuild -->
 
 </body>
+
 </html>
