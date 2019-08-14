@@ -1,0 +1,39 @@
+/**
+ *  Do not remove the comment below. It's the markers used by wiredep to inject
+ *  sass dependencies when defined in the bower.json of your dependencies
+ */
+// bower:scss
+// endbower
+
+
+@import "variable";
+
+html {
+  box-sizing: border-box;
+  color: $dark;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #ccc;
+  line-height: 1.4;
+  margin: 30px 50px !important;
+}
+
+/* Footer */
+footer{
+  background-color: $dark;
+  color: $light;
+  margin-top: 2em;
+  padding: 1em;
+  text-align: center;
+}
+
+/**
+ *  Do not remove the comment below. It's the markers used by gulp-inject to inject
+ *  all your sass files automatically
+ */
+// injector
+// endinjector
+
+
