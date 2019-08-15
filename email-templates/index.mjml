@@ -1,0 +1,94 @@
+<mjml>
+<mj-head>
+<mj-breakpoint width="450px">
+</mj-head>
+  <mj-body background-color="#F7F8F4">
+      <mj-section>
+        <mj-column width="80%" background-color="#CCD8AE"> 
+          <mj-text font-style="bold"font-size="15px"color="#F0F7E3">
+          C R E A T I N G 
+          </mj-text>
+          <mj-text font-style="bold" font-weight="bold"font-size="25px"color="#1D343C">
+            Responsive Email Magic
+          </mj-text>
+          <mj-image  width="50px" align="left" src="https://picsum.photos/50"/>
+        </mj-column>
+      </mj-section>
+
+      <mj-section>  
+        <mj-column width="450px">
+        <mj-divider border-width="0.5px"width="400px" border-color="#F1F2ED" />
+        <mj-text align="left" padding-right="0px"font-style="bold" font-weight="bold"font-size="20px"color="#1D343C">
+            Welcome to our responsive email!
+        </mj-text>
+        <mj-text color="#1D343C">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum auctor leo, in pretium purus egestas id. In et pretium felis. Mauris eros dui, maximus nec arcu posuer.
+        </mj-text>
+        <mj-divider border-width="0.5px"width="400px" border-color="#F1F2ED" />
+        </mj-column>
+      </mj-section>
+
+      
+      <mj-section>
+      <mj-group width="450px">
+        <mj-column  width="50%">
+          <mj-text>
+            <img width="90px" src="https://picsum.photos/200" style="margin-left:3px;">
+          </mj-text>
+        </mj-column>
+        <mj-column  width="50%" >
+          <mj-text  color="#1D343C" font-size="13px" height="50px">
+            <p style="margin-left:-120px; margin-top:-1px;">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum auctor leo, in pretium purus egestas id. In et pretium felis. Mauris eros dui, maximus nec arcu posuerMauris eros dui, maximus nec arcu posuer.</p>
+          </mj-text>
+          <mj-text>
+           <button style="width:100px; 
+                         height: 70px;
+                         
+                         font-weight: bold;
+                         margin-left: -90px; 
+                         color: white;
+                         background: #D25D4D;
+                         border: none;">
+                         Claim Yours!
+          </button>
+        </mj-column>
+        </group>
+      </mj-section>
+
+      <mj-section>
+        <mj-column width="450px" padding-bottom="0px">
+          <mj-image height="650px" src="https://picsum.photos/450/650" />
+        </mj-column>
+      </mj-section>
+      <mj-section >
+        <mj-column width="450px">
+          <mj-divider border-width="0.5px" width="450px" border-color="#F1F2ED" />
+          <mj-text color="#1D343C" font-size="12px">
+           <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum auctor leo, in pretium purus egestas id. In et pretium felis. Mauris eros dui, maximus nec arcu posuer.</p>
+          </mj-text>
+          <mj-divider border-width="0.5px" width="450px" border-color="#F1F2ED" />
+        </mj-column>
+      
+      </mj-section>
+      <mj-section>
+        <mj-column width="450px" background-color="#47515D">
+          <mj-text color="white" align="center">
+           <p style="margin-bottom:-10px;"> By David Benitez 2019</p>
+           <p><a style="text-decoration:underline; color:white;">Unsubscribe</a> from this newsletter instantly</p> 
+           <mj-image width="30px" src="https://picsum.photos/30" border-radius="50px"/>
+          </mj-text> 
+        </mj-column>
+        <mj-group background-color="#47515D" width="450px">
+        <mj-column width="50%" background-color="#47515D">
+          <mj-image width="40px" align="right" src="https://picsum.photos/40" border-radius="50px"/>
+        </mj-column>
+         <mj-column width="50%" background-color="#47515D">
+          <mj-image width="40px" align="left" src="https://picsum.photos/40/40" border-radius="50px"/>
+        </mj-column>
+        </mj-group>
+      </mj-section>
+      
+      
+  </mj-body>
+</mjml>
