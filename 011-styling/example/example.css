@@ -1,0 +1,148 @@
+/*
+ * Practice : Styling Buttons, links and lists
+ * Version: 1
+ * By: David Benitez
+ */
+
+html,
+body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+#banner {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    background: url(../resources/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -1;
+}
+
+.page-content {
+    padding: 0;
+}
+
+.page-wrap {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.page-wrap h1 {
+    margin: 0;
+    padding: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background: #000;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.page-wrap div:nth-child(3) {
+    background: white;
+}
+
+.style-form {
+    max-width: 568px;
+    margin: 15px auto;
+}
+
+.style-form input,
+.style-form textarea {
+    display: block;
+    width: 80%;
+    padding: 10px;
+    margin: 15px auto;
+    outline: none;
+    border: 0;
+    background: #F0EFF1;
+    font-weight: bold;
+}
+
+.style-form input:focus,
+.style-form textarea:focus {
+    border: 1px solid #e6e4e7;
+}
+
+.style-form button {
+    margin-left: 45px;
+    width: 30%;
+    height: 45px;
+    background: #F5C5D7;
+    border: 1px solid #F5C5D7;
+    text-transform: uppercase;
+    color: white;
+}
+
+.style-form button:hover {
+    background: white;
+    color: #F5C5D7;
+}
+
+.style-form p {
+    padding-top: 10px;
+    margin-left: 45px;
+    color: #D6D5D6;
+}
+
+footer {
+    height: 100%;
+}
+
+footer>div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: #F5C5D7;
+}
+
+footer>div div {
+    width: 35%;
+    padding: 0 120px;
+    margin: 70px auto;
+}
+
+footer p {
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    width: 100%;
+    padding-bottom: 15px;
+    border-bottom: 1px solid white
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li a {
+    text-align: left;
+    text-decoration: none;
+    color: white;
+}
+
+footer ul li a:hover {
+    color: black;
+}
+
+@media(min-width: 768px) {
+    #banner {
+        background-position-x: 50%;
+    }
+    footer>div {
+        align-content: space-around;
+    }
+    footer>div div {
+        padding: 0 75px;
+        margin: 70px 20px;
+    }
+}
