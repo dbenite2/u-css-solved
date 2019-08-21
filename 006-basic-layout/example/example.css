@@ -1,0 +1,172 @@
+/*
+ * Practice : Basic Layout
+ * Version: 1
+ * By: David Benitez
+ */
+
+html {
+    background: white;
+    margin: 0px;
+}
+
+.container {
+    margin: auto 200px;
+}
+
+.header,
+.footer {
+    clear: left;
+    overflow: hidden;
+    zoom: 1;
+    background: #D24F2E;
+}
+
+.header ul,
+.footer ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.header li,
+.footer li {
+    display: inline-block;
+}
+
+.header li span a,
+.footer li span a {
+    color: white;
+    text-decoration: none;
+    padding: 20px 20px 0px 20px;
+}
+
+.side-bar {
+    float: left;
+    position: relative;
+    width: 320px;
+    margin-right: -320px;
+    padding: 0px;
+    background: #1ac6ff;
+}
+
+.side-bar ul {
+    margin: 0px;
+}
+
+.side-bar a,
+.flx-sdb a {
+    text-decoration: none;
+    color: grey;
+}
+
+.main {
+    float: left;
+    height: 560px;
+    width: 71.8%;
+    padding: 15px;
+    background: #ffb3b3;
+    border-left: 320px solid #1ac6ff;
+}
+
+.main p,
+.flx-main p {
+    padding: 0px;
+    margin: 0px;
+}
+
+.boxes {
+    background-color: #1ac6ff;
+    margin-top: 15px;
+    height: 360px;
+}
+
+.boxes div {
+    display: inline-block;
+    width: 24.445%;
+    height: 48.8%;
+    margin: 0px;
+    padding: 0px;
+    border: 0.7px solid #D24F2E;
+}
+
+.flx-hdr,
+.flx-foot {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+}
+
+.col {
+    display: flex;
+    flex-flow: column;
+}
+
+.row {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.flx-hdr,
+.flx-foot {
+    background: #D24F2E;
+}
+
+.flx-hdr ul,
+.flx-foot ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.flx-hdr a,
+.flx-foot a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+
+.flx-cntnt {
+    display: flex;
+}
+
+.flx-sdb {
+    background: #1ac6ff;
+    height: 560px;
+    width: 25.7%;
+}
+
+.flx-sdb a {
+    text-decoration: none;
+    color: gray;
+}
+
+.flx-main {
+    background: #ffb3b3;
+    order: 2;
+    flex-grow: 1;
+    padding: 15px;
+}
+
+.bx-container {
+    display: flex;
+    align-content: flex-start;
+    height: 360px;
+    padding-top: 8px;
+}
+
+.bx-container div {
+    background: #1ac6ff;
+}
+
+.bx-full {
+    width: 100%;
+    height: 98%;
+    border: 1px solid red;
+}
+
+.bx-md {
+    width: 100%;
+    height: 72%;
+    border: 1px solid red;
+}
