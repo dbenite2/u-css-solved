@@ -1,0 +1,163 @@
+/*
+ * Practice : Centering
+ * Version: 1
+ * By: David Benitez
+ */
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    background-color: white;
+}
+
+.container {
+    box-sizing: border-box;
+    padding: 18px;
+    margin: auto 200px;
+    max-width: 1200px;
+    background-color: #e8e8e8;
+}
+
+
+/* centered header */
+
+.h4 {
+    background-color: #d9d9d9;
+    text-align: center;
+    padding: 10px;
+    margin-top: -4px;
+}
+
+
+/* centered navigation menu, using inline-block and txt-align */
+
+.nav {
+    display: inline;
+}
+
+.cnt-nav {
+    text-align: center;
+    background-color: #d9d9d9;
+    padding: 10px;
+}
+
+.cnt-nav div {
+    display: inline-block;
+}
+
+.cnt-nav div a {
+    text-decoration: none;
+    padding: 7px;
+    font-size: 17px;
+}
+
+
+/* centered blocks, using 1.inline-block and 2.flex-box*/
+
+.cnt-blck {
+    text-align: center;
+}
+
+.cnt-blck div {
+    display: inline-block;
+    text-align: left;
+    max-width: 225px;
+    padding: 18px;
+    margin: 12px;
+    background-color: #d9d9d9;
+}
+
+.cnt-flx {
+    display: flex;
+    justify-content: center;
+}
+
+.cnt-flx div {
+    max-width: 225px;
+    padding: 18px;
+    margin: 12px;
+    background-color: #d9d9d9;
+}
+
+
+/* single line centered with fixed height */
+
+.cnt-ln {
+    margin: 18px 0px;
+    padding: 14px;
+    width: 47%;
+    height: 50px;
+    line-height: 50px;
+    white-space: nowrap;
+    background-color: #d9d9d9;
+}
+
+
+/* single line centered with table property */
+
+.cnt-tbl {
+    display: table;
+    height: 230px;
+    width: 190px;
+    margin: 18px 0px;
+}
+
+.cnt-tbl p {
+    display: table-cell;
+    margin: 0px;
+    padding: 17px;
+    vertical-align: middle;
+    background-color: #d9d9d9;
+}
+
+
+/* centered block of text with flex-box */
+
+.cnt-flx-mlt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 120px;
+    padding: 90px 20px;
+    background-color: #d9d9d9;
+}
+
+
+/* centered text with fixed height */
+
+.cnt-fxd,
+.cnt-ufx {
+    position: relative;
+    height: 300px;
+    margin: 7px 0px;
+    padding: 8px;
+    resize: vertical;
+    background-color: #d9d9d9;
+}
+
+.cnt-fxd div {
+    position: absolute;
+    height: 70px;
+    top: 50%;
+    right: 20px;
+    left: 20px;
+    padding: 7px;
+    margin-top: -25px;
+    color: white;
+    background-color: #999999;
+}
+
+
+/* centered text without fixed height */
+
+.cnt-ufx div {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    left: 20px;
+    padding: 7px;
+    transform: translateY(-50%);
+    color: white;
+    background-color: #999999;
+}
